@@ -5,4 +5,4 @@ RUN mkdir /opt/odoo
 COPY . /opt/odoo/
 RUN pip3 install setuptools wheel
 RUN pip3 install -r /opt/odoo/requirements.txt
-ENTRYPOINT [ "python3", "/opt/odoo/odoo-bin -c /opt/odoo/odoo.conf" ]
+ENTRYPOINT [ "python3", "/opt/odoo/odoo-bin", "-c", "/opt/odoo/odoo.conf" ]
